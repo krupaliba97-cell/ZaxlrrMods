@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>CurseSMP — Official Store</title>
+  <meta name="description" content="Official CurseSMP store. Buy ranks, gems, crate keys, kits and bundles for India's best Minecraft server."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="particles"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">CURSE<span>SMP</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Store</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="cart.html" class="cart-link">🛒 Cart <span class="cart-badge" style="display:none">0</span></a>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge"><span class="live-dot"></span>Server Online — Java & Bedrock</div>
+  <h1><em>CURSE</em>SMP</h1>
+  <p>India's dark fantasy survival server. Buy ranks, gems, keys and kits to dominate the cursed world.</p>
+  <div class="hero-btns">
+    <a href="#shop" class="btn-gold">⚔️ Browse Store</a>
+    <a href="about.html" class="btn-ghost">About Server</a>
+  </div>
+  <div class="server-pill">
+    <div class="pill-g">
+      <div class="pill-l">Java IP</div>
+      <div class="pill-v">play.cursesmp.in</div>
+    </div>
+    <div class="pill-sep"></div>
+    <div class="pill-g">
+      <div class="pill-l">Bedrock Port</div>
+      <div class="pill-v">19132</div>
+    </div>
+    <button class="copy-btn" onclick="copyIP('play.cursesmp.in')">📋 Copy</button>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop" class="shop">
+  <div class="shop-top reveal">
+    <div class="shop-title">All <span>Products</span></div>
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="shopSearch" placeholder="Search products…"/>
+    </div>
+  </div>
+
+  <div class="filter-tabs reveal">
+    <button class="tab active" data-filter="all">All</button>
+    <button class="tab" data-filter="rank">⚔️ Ranks</button>
+    <button class="tab" data-filter="gems">💎 Gems</button>
+    <button class="tab" data-filter="keys">🗝️ Crate Keys</button>
+    <button class="tab" data-filter="kit">🎒 Kits</button>
+    <button class="tab" data-filter="bundle">📦 Bundles</button>
+  </div>
+
+  <div class="grid">
+
+    <!-- VIP -->
+    <div class="card reveal" data-id="rank-vip" data-cat="rank" data-price="149">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">⚔️</div>
+        <span class="card-badge b-new">New</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Rank</div>
+        <div class="card-name">VIP</div>
+        <div class="card-desc">Entry rank with chat color, extra homes and priority join.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹149</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MVP -->
+    <div class="card reveal" data-id="rank-mvp" data-cat="rank" data-price="299">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">🛡️</div>
+        <span class="card-badge b-hot">Popular</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Rank</div>
+        <div class="card-name">MVP</div>
+        <div class="card-desc">Most popular rank. 3 homes, MVP kit every 3 days, lounge access.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹299</div><div class="price-was">₹399</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEGEND -->
+    <div class="card reveal" data-id="rank-legend" data-cat="rank" data-price="499">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">🔥</div>
+        <span class="card-badge b-sale">Sale</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Rank</div>
+        <div class="card-name">Legend</div>
+        <div class="card-desc">Legendary status. Daily kit, 6 homes, custom join message.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹499</div><div class="price-was">₹699</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOD -->
+    <div class="card reveal" data-id="rank-god" data-cat="rank" data-price="799">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">👑</div>
+        <span class="card-badge b-top">God Tier</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Rank</div>
+        <div class="card-name">GOD</div>
+        <div class="card-desc">Unlimited homes, God Kit daily, lobby fly. Rule the server.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹799</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GEMS 500 -->
+    <div class="card reveal" data-id="gems-500" data-cat="gems" data-price="99">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">💎</div>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Gems</div>
+        <div class="card-name">500 Gems</div>
+        <div class="card-desc">Starter pack. Spend in /gemshop for cosmetics and items.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹99</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GEMS 2000 -->
+    <div class="card reveal" data-id="gems-2000" data-cat="gems" data-price="299">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">💠</div>
+        <span class="card-badge b-hot">Best Value</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Gems</div>
+        <div class="card-name">2000 Gems</div>
+        <div class="card-desc">2000 + 200 bonus gems. Best bang for your rupee.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹299</div><div class="price-was">₹399</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY x1 -->
+    <div class="card reveal" data-id="key-1" data-cat="keys" data-price="79">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">🗝️</div>
+        <span class="card-badge b-new">New</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Crate Key</div>
+        <div class="card-name">Cursed Key ×1</div>
+        <div class="card-desc">Opens the Cursed Crate. Rare weapons and custom enchants inside.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹79</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY x5 -->
+    <div class="card reveal" data-id="key-5" data-cat="keys" data-price="299">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">🔑</div>
+        <span class="card-badge b-sale">Save 25%</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Crate Key</div>
+        <div class="card-name">Cursed Key ×5</div>
+        <div class="card-desc">5-pack with guaranteed rare drop. Save ₹96 vs single keys.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹299</div><div class="price-was">₹395</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WARRIOR KIT -->
+    <div class="card reveal" data-id="kit-warrior" data-cat="kit" data-price="129">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">🎒</div>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Kit</div>
+        <div class="card-name">Warrior Kit</div>
+        <div class="card-desc">Full Iron armor (Prot III), Sharp II sword, 20× steak. Refresh 3 days.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹129</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MINER KIT -->
+    <div class="card reveal" data-id="kit-miner" data-cat="kit" data-price="99">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">⛏️</div>
+        <span class="card-badge b-new">New</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Kit</div>
+        <div class="card-name">Miner Kit</div>
+        <div class="card-desc">Eff IV pickaxe, Silk Touch shovel, Night Vision ×5. Refresh 3 days.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹99</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- STARTER BUNDLE -->
+    <div class="card reveal" data-id="bundle-starter" data-cat="bundle" data-price="349">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">📦</div>
+        <span class="card-badge b-sale">Save 30%</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Bundle</div>
+        <div class="card-name">Starter Bundle</div>
+        <div class="card-desc">VIP rank + 500 Gems + 2× Keys + Warrior Kit. Perfect for new players.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹349</div><div class="price-was">₹506</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ULTIMATE BUNDLE -->
+    <div class="card reveal" data-id="bundle-ultimate" data-cat="bundle" data-price="999">
+      <div class="card-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-shine"></div>
+        <div class="banner-icon">💥</div>
+        <span class="card-badge b-top">Ultimate</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">Bundle</div>
+        <div class="card-name">Ultimate Bundle</div>
+        <div class="card-desc">GOD rank + 2200 Gems + 5× Keys + All Kits. Dominate from day one.</div>
+        <div class="card-foot">
+          <div><div class="price-now">₹999</div><div class="price-was">₹1898</div></div>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="no-results" id="noResults">No products found. Try a different search or filter.</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">CURSE<span>SMP</span></a>
+        <p>India's dark fantasy Minecraft server — Java & Bedrock. All purchases are delivered in-game within 24 hours.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Store</h5>
+        <ul>
+          <li><a href="#shop">Ranks</a></li>
+          <li><a href="#shop">Gems</a></li>
+          <li><a href="#shop">Crate Keys</a></li>
+          <li><a href="#shop">Kits</a></li>
+          <li><a href="#shop">Bundles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Server</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://discord.gg/cursesmp" target="_blank">Discord</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 CurseSMP. All rights reserved.</p>
+      <p>Not affiliated with Mojang or Microsoft · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
